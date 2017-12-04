@@ -1,0 +1,3 @@
+[submodule "themes/segfault"]
+	path = themes/segfault
+	url = git@github.com:alxbl/segfault-theme.git
