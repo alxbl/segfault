@@ -1,6 +1,3 @@
 [submodule "themes/segfault"]
 	path = themes/segfault
 	url = https://github.com/alxbl/segfault-theme.git
-[submodule "themes/segfault-theme"]
-	path = themes/segfault
-	url = https://github.com/alxbl/segfault-theme.git
