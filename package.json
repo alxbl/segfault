@@ -6,6 +6,10 @@
   "hexo": {
     "version": "3.4.2"
   },
+  "scripts": {
+    "start": "hexo server -p 4333",
+    "build": "hexo generate"
+  },
   "dependencies": {
     "hexo": "^3.4.2",
     "hexo-generator-archive": "^0.1.4",
