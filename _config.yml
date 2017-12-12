@@ -32,6 +32,7 @@ post_asset_folder: true
 relative_link: false
 future: true
 
+# Syntax Highlighting
 highlight:
   enable: true
   hljs: true
@@ -42,6 +43,28 @@ highlight:
 
 marked:
     breaks: false
+
+# Beautify
+beautify:
+  types:
+    - html
+    - css
+    - js
+  exclude:
+    - '*.min.css'
+    - '*.min.js'
+  html:
+    'indent_inner_html': false
+    'indent_size': 2
+    'indent_with_tabs': false
+    'preserve_newlines': false
+  css:
+    'indent_size': 2
+    'newline_between_rules': true
+    'indent_with_tabs': false
+  js:
+    'indent_size': 2
+    'indent_with_tabs': false
 
 # Home page setting
 index_generator:
