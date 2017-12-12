@@ -4,9 +4,8 @@
 
 # Site
 title: Segfault
-subtitle: Tales of software tinkering
+author: alxbl
 description: Debugging, Reverse Engineering, Security and Low-level tinkering. I also sometimes blog about non-software related things.
-author: Alexandre Beaulieu
 language: en
 timezone: America/Montreal
 
@@ -37,21 +36,24 @@ render_drafts: false
 post_asset_folder: true
 relative_link: false
 future: true
+
 highlight:
   enable: true
+  hljs: true
   line_number: true
   auto_detect: false
-  tab_replace:
-  
+  gutter: true
+  wrap: false
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 5
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -63,6 +65,16 @@ tag_map:
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
+
+# RSS
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
+    hub:
+    content: false
+    content_limit: 140
+    content_limit_delim: ' '
 
 # Pagination
 ## Set per_page to 0 to disable pagination
