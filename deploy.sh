@@ -97,6 +97,9 @@ selectNodeVersion () {
 ##################################################################################################################################
 # Deployment
 # ----------
+echo Pulling submodules
+cd "$SCM_REPOSITORY_PATH"
+eval "git submodule foreach git pull origin master"
 
 echo Handling node.js deployment.
 
