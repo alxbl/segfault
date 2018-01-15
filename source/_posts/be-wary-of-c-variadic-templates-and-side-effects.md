@@ -15,7 +15,7 @@ Of course, I also have not been coding C++ for a number of years, so I decided
 that this was a good opportunity to get back into my old habits. Little did I
 know that I was about to hit a very hard snag.
 
-[1]: https://https://learnopengl.com
+[1]: https://learnopengl.com
 
 ## Variadic Templates
 
