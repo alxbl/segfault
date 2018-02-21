@@ -6,16 +6,19 @@ tags:
   - Express
   - Node
   - Tutorial
+date: 2018-02-20 21:33:43
 ---
 
-The modern web can be very painful to approach with the seemingly endless number
-of technologies and approaches to solving the same problem. This series aims to
-take a technical yet approachable dive into one possible implementation of the
-end-to-end stack that makes up a modern SPA. The series assumes at least some
-basic understanding of web development. More specifically, this tutorial will
-not teach you how to program, and you should be comfortable with at least the
-basics of Javascript, HTML, and CSS. While the code examples should be fairly
-self-explanatory, the tutorial will not take you through them line-by-line.
+
+The modern web can be very painful to approach with the seemingly endless
+number of technologies and frameworks for solving the same problem. This series
+aims to take a technical yet beginner-friendly dive into one possible
+implementation of the end-to-end stack that makes up a modern SPA. The series
+assumes at least some basic understanding of web development. More
+specifically, this tutorial will not teach you how to program, and you should
+be comfortable with at least the basics of Javascript, HTML, and CSS. While the
+code examples should be fairly self-explanatory, the tutorial will not take you
+through them line-by-line.
 
 We will build a simple budgeting and financial goal application that uses Vue.js
 for the Frontend (code that runs in your browser), Express.js for the backend
@@ -202,7 +205,7 @@ nature. By itself, webpack doesn't do much: it relies heavily on `plugins` and
 formats. You can think of webpack as the pipeline that processes and transforms
 all of your assets so that they are ready for public consumption. These
 transformations include removing comments, reducing the code's size and removing
-unused code from your application. Webpack also compresses your multiple code
+unused code from your application. webpack also compresses your multiple code
 files into one or more bundles that aim to reduce the number of files that need
 to be sent from the server to the client. This translates to less connections
 and thus faster page load times.
@@ -263,9 +266,9 @@ module.exports = [
 ```
 
 This configuration file basically tells webpack that it should use `ts-loader`
-to process any Typescript files that it encounters. It also tells Webpack about
-where to find our frontend and backend's entry points. Lastly, it tells webpack
-where to put the processed bundles.
+to process any Typescript files that it encounters. It also specifies where to
+find our frontend and backend's entry points. Lastly, it configures the
+destination directory of the processed bundles.
 
 Now it should be possible to run webpack to build our application... except that
 we don't have an application to build yet! Let's remedy that in the next
@@ -322,7 +325,7 @@ are any build errors or warning, you will see those here as well.
 > from time to time, but you should strive to keep your build output as clean as
 > possible.
 
-[4]: https://www.webpack.js.org
+[4]: https://webpack.js.org
 [5]: https://en.wikipedia.org/wiki/HTTP/2
 [6]: https://github.com/alxbl/vue-express-ts-tutorial/blob/master/package.json#L7
 
