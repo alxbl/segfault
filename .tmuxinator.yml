@@ -1,0 +1,10 @@
+name: segv
+
+windows:
+    - blog:
+        layout: main-horizontal
+        panes:
+            - nvim
+            - bin:
+                - ./go.sh
+            - zsh: cd .
