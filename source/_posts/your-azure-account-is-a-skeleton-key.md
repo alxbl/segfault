@@ -57,7 +57,7 @@ DIR=/home/me/tmp
 mkdir "$DIR"
 
 # Create a passphrase-less keypair
-ssh-keygen -keygen -b 2048 -t rsa -N "" -f "$DIR/recovery.key"
+ssh-keygen -b 2048 -t rsa -N "" -f "$DIR/recovery.key"
 
 # Add the key to authorized logon keys
 cat "$DIR/recovery.key.pub" >> "$DIR/.ssh/authorized_keys"
