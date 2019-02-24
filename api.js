@@ -7,7 +7,7 @@ const { spawn } = require('child_process')
 const app = express()
 const port = process.env.PORT
 
-SECRET = process.env.GIT_API_SECRET
+SECRET = process.env.GIT_API_SECRET || 'invalid'
 PATH   = '/srv/http/segv'
 const api = express.Router();
 
