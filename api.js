@@ -5,7 +5,7 @@ const crypto = require('crypto')
 const { spawn } = require('child_process')
 
 const app = express()
-const port = 8080
+const port = process.env.PORT
 
 SECRET = process.env.GIT_API_SECRET
 PATH   = '/srv/http/segv'
@@ -24,8 +24,6 @@ function doHook(h, p) {
   if (h.event !== 'push') return;
   // It's a push event. Run the deploy script.
   deploy = spawn('bash', [`${PATH}/deploy.sh`,h.delivery], { cwd: PATH, shell: true })
-
-
 }
 
 api.use(helmet())
@@ -58,4 +56,4 @@ api.post('/git',  (req, res) => {
 
 app.use('/api', api)
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, '127.0.0.1', () => console.log(`Accepting connections on port ${port}...`))
