@@ -23,7 +23,11 @@ function getHeaders(req) {
 function doHook(h, p) {
   if (h.event !== 'push') return;
   // It's a push event. Run the deploy script.
+  console.log('Regenerating static content.')
   deploy = spawn('bash', [`${PATH}/deploy.sh`,h.delivery], { cwd: PATH, shell: true })
+  deploy.stdout.on('data', (d) => console.log(d))
+  deploy.stderr.on('data', (d) => console.error(d))
+  deploy.on('close', (e) => console.log('Done => Exit Code: ' + e))
 }
 
 api.use(helmet())
