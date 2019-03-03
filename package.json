@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "start": "hexo serve -p 4433",
     "generate": "hexo generate",
     "api": "node api.js"
   },
