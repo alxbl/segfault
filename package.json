@@ -23,7 +23,7 @@
     "hexo-renderer-ejs": "^0.3.0",
     "hexo-renderer-marked": "^0.3.0",
     "hexo-renderer-stylus": "^0.3.3",
-    "marked": "^0.3.18",
+    "marked": "^4.0.10",
     "uglify-js": "^3.2.1"
   },
   "devDependencies": {
